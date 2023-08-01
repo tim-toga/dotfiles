@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
- 
+
 commit_messages = File.readlines(ARGV[0]).join('')
 open(ARGV[0], 'w') do |file|
   branch_raw = `git rev-parse --abbrev-ref HEAD`
