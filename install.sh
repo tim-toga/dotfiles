@@ -1,3 +1,3 @@
-mkdir -p $HOME/.git/hooks
-cp dotfiles/.git_template/hooks $HOME/.git/hooks
+mkdir -p $HOME/.git
+cp -r $HOME/dotfiles/.git_template/hooks $HOME/.git/hooks
 
