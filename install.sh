@@ -1,7 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash -e
 
-set -eu
+IGNORE_PATTERN="^\.(git|travis)"
 
-echo "source /usr/share/bash-completion/completions/git" >> "/root/.bashrc"
-echo "Install completed!!!!"
-
+echo "Create dotfile links."
+for dotfile in .??*; do
+    [[ $dotfile =~ $IGNORE_PATTERN ]] && continue
+    ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
+done
+echo "Success"
