@@ -47,3 +47,11 @@ __bash_prompt() {
 }
 __bash_prompt
 export PROMPT_DIRTRIM=4
+
+function rails_routes() {
+    rails routes \
+    | sed -e 's/(.:format)//g' \
+    | awk -F'Verb|GET|POST|PUT|PATCH|DELETE' '{if(match($1, /^ *$/)){printf "\" %s\n", $0;} else print}' \
+    | awk '{printf "%-100s %-7s %-160s %s\n", $1,$2,$3,$4}' \
+    | tr '"' ' '
+}
