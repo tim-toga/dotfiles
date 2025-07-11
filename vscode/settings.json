@@ -1,0 +1,89 @@
+{
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "other": "on",
+            "strings": "on"
+        },
+        "editor.snippetSuggestions": "top",
+        "editor.wordWrap": "on"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp"
+    },
+    "catppuccin-icons.associations.files": {
+        "conflict.json.jb": "json",
+        "create.json.jb": "json",
+        "index.erb": "html",
+        "index.json.jb": "json",
+        "show.erb": "html",
+        "show.json.jb": "json"
+    },
+    "dotfiles.installCommand": "install.sh",
+    "dotfiles.repository": "https://github.com/tim-toga/dotfiles.git",
+    "editor.foldingStrategy": "indentation",
+    "editor.fontLigatures": true, //リガチャ(合字)の有効化
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "editor.tabSize": 2,
+    "files.associations": {
+        "*.jb": "ruby"
+    },
+    "files.exclude": {
+        "**/.gem_rbs_collection": true,
+        "**/app/assets/fonts": true,
+        "**/public": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.openRepositoryInParentFolders": "always",
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "text": "必ず日本語で記述してください"
+        },
+        {
+            "text": "更新、修正等の曖昧な表現をしないでください"
+        },
+        {
+            "text": "丁寧語は使わないでください"
+        },
+        {
+            "text": "体言止めで記述してください"
+        },
+        {
+            "text": "クラス名、メソッド名が必要な場合はそのまま使用してください"
+        },
+        {
+            "text": "最後に1行あけてファイルごとの詳細な変更内容を記述してください"
+        }
+    ],
+    "github.copilot.chat.localeOverride": "ja",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:claude-sonnet-4",
+    "gitlens.views.commits.files.layout": "tree",
+    "rdbg.useBundler": false,
+    "redhat.telemetry.enabled": true,
+    "remote.autoForwardPortsFallback": 5,
+    "remote.autoForwardPortsSource": "hybrid",
+    "rubocop.commandPath": "docker compose exec app27 rubocop",
+    "ruby.specCommand": "docker compose run --rm app27 rspec",
+    "rubyLsp.enabledFeatures": {
+        "semanticHighlighting": false
+    },
+    "rubyLsp.formatter": "rubocop",
+    "rubyLsp.rubyVersionManager": "auto",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "window.zoomLevel": 1,
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.productIconTheme": "fluent-icons",
+    "yaml.format.enable": false,
+    "yaml.format.printWidth": 10
+}
